@@ -1,0 +1,398 @@
+/* ---------------- RESET E BODY ---------------- */
+body {
+    background-color: #F8F8FF;
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    height: 55px;
+    color: #F8F8FF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: #F8F8FF;
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 11;
+    margin-right: 20px;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    background-color: #F8F8FF;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* ---------------- MAIN ---------------- */
+main {
+    flex: 1;
+    width: 100%;
+    padding: 2px 0;
+    background-color: #F8F8FF;
+    box-sizing: border-box;
+}
+
+/* ---------------- BANNER ---------------- */
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 560px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 40%;
+    left: 5vw;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+}
+
+.banner-texto h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-texto h4 {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    color: greenyellow;
+}
+
+/* ---------------- CARROSSEL DE PALAVRAS CONTÍNUO ---------------- */
+.carrossel-palavras {
+    width: 100%;
+    overflow: hidden;
+    background: green;
+    padding: 12px 0;
+    position: relative;
+}
+
+.carrossel-palavras .palavras {
+    display: flex;
+    white-space: nowrap;
+    animation: deslizar 20s linear infinite;
+}
+
+.carrossel-palavras span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F8F8FF;
+    margin: 0 40px;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---------------- CONTEÚDO LATERAL ---------------- */
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+.conteudo-lateral {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.conteudo-lateral-left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.texto-lateral {
+    flex: 1;
+    text-align: left;
+}
+
+.imagem-lateral {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.imagem-lateral:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- GOOGLE MAPS ---------------- */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 0;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background-color: black;
+    color: #F8F8FF;
+    width: 100%;
+    padding: 30px 20px 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 18px 18px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #F8F8FF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: greenyellow;
+}
+
+.footer-contato p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-copy {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (max-width: 900px) {
+    .container {
+        padding: 10px 4vw;
+    }
+
+    .conteudo-lateral,
+    .conteudo-lateral-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .imagem-lateral {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .banner-texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-texto h4 {
+        font-size: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        padding: 10px 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .nav-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 5px 2vw;
+    }
+
+    .banner-texto h1 {
+        font-size: 1.1rem;
+    }
+
+    .banner-texto h4 {
+        font-size: 0.9rem;
+    }
+
+    .imagem-lateral {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .carrossel-palavras span {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+}

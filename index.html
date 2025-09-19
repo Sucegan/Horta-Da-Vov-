@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>HORTA DA VOVÓ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ---------------- HEADER ---------------- -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo" width="50" height="50">
+        <span>Horta da Vovó</span>
+    </div>
+
+    <!-- Botão hambúrguer -->
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</header>
+
+<!-- ---------------- MAIN ---------------- -->
+<main>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="img1.png" class="product-image" alt="Imagem da Horta">
+        <div class="banner-texto">
+            <h4>Horta da Vovó</h4>
+            <h1>HORTA DA VOVÓ</h1>
+        </div>
+
+        <!-- Carrossel contínuo -->
+        <div class="carrossel-palavras">
+            <div class="palavras">
+                <span>Frescor</span>
+                <span>Qualidade</span>
+                <span>Saúde</span>
+                <span>Sabor</span>
+                <span>Natureza</span>
+                <span>Tradição</span>
+                <span>Frescor</span>
+                <span>Qualidade</span>
+                <span>Saúde</span>
+                <span>Sabor</span>
+                <span>Natureza</span>
+                <span>Tradição</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo lateral -->
+    <div class="container">
+        <div class="conteudo-lateral">
+            <div class="texto-lateral">
+                <h2>A Horta que muda vidas</h2>
+                <p>Na Horta da Vovó, cultivamos com carinho os melhores produtos naturais para você e sua família
+                    desfrutarem de uma alimentação saudável e saborosa. Nossa missão é proporcionar alimentos frescos,
+                    livres de agrotóxicos, diretamente do campo para a sua mesa. Com uma variedade de hortaliças,
+                    frutas e ervas, garantimos qualidade e sustentabilidade em cada colheita. Venha conhecer nossa
+                    horta e descubra o verdadeiro sabor da natureza!
+                </p>
+            </div>
+            <img src="horta.jpg" alt="Descrição" class="imagem-lateral">
+        </div>
+
+        <div class="conteudo-lateral-left">
+            <div class="texto-lateral">
+                <h2>Sobre vovó Tereza</h2>
+                <p>Na Horta da Vovó, cultivamos com carinho os melhores produtos naturais para você e sua família
+                    desfrutarem de uma alimentação saudável e saborosa. Nossa missão é proporcionar alimentos frescos,
+                    livres de agrotóxicos, diretamente do campo para a sua mesa. Com uma variedade de hortaliças,
+                    frutas e ervas, garantimos qualidade e sustentabilidade em cada colheita. Venha conhecer nossa
+                    horta e descubra o verdadeiro sabor da natureza!
+                </p>
+            </div>
+            <img src="vovo.jpg" alt="Descrição" class="imagem-lateral">
+        </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="container">
+        <h2 style="text-align: center;">Encontre-nos aqui</h2>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.692634052981!2d-50.38416592505164!3d-22.73966303191889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495365b7fb3bd45%3A0x55a90443df00ddae!2sR.%20Henrique%20Jos%C3%A9%20P%C3%ADres%2C%20299%20-%20C%C3%A2ndido%20Mota%2C%20SP%2C%2019885-576%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1758244201815!5m2!1spt-BR!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</main>
+
+<!-- ---------------- FOOTER ---------------- -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo Horta da Vovó" width="50" height="50">
+            <span>Horta da Vovó</span>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-contato">
+            <p>Email: contato@hortadavovo.com.br</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p>Endereço: R. Henrique José Pires, 299 - Cândido Mota, SP</p>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>&copy; 2024 Horta da Vovó. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+<!-- ---------------- SCRIPT HAMBÚRGUER ---------------- -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');      // mostra/esconde menu
+        menuToggle.classList.toggle('active'); // anima o ícone
+    });
+</script>
+</body>
+</html>
