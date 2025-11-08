@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <title>HORTA DA VOVÓ</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <meta name="description" content="Horta da Vovó - Produtos orgânicos frescos e naturais">
+  <meta name="keywords" content="horta orgânica, produtos naturais, agricultura familiar">
+  <meta name="author" content="Horta da Vovó">
+</head>
+
+<body>
+
+  <!-- ---------------- HEADER ---------------- -->
+  <header>
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo" width="50" height="50">
+      <span>Horta da Vovó</span>
+    </div>
+
+    <!-- Botão hambúrguer -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu de navegação -->
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="../pages/produtos.html">Produtos</a></li>
+      <li><a href="../pages/cultivo.html">Cultivo</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </header>
+
+  <!-- ---------------- MAIN ---------------- -->
+  <main>
+    <!-- Banner -->
+    <div class="banner">
+      <img src="../images/img1.png" class="product-image" alt="Imagem da Horta">
+      <div class="banner-texto">
+        <h4>Bem-vindo à</h4>
+        <h1>HORTA DA VOVÓ</h1>
+      </div>
+
+      <!-- Carrossel contínuo -->
+      <div class="carrossel-palavras">
+        <div class="palavras">
+          <span>Frescor</span>
+          <span>Qualidade</span>
+          <span>Saúde</span>
+          <span>Sabor</span>
+          <span>Natureza</span>
+          <span>Tradição</span>
+          <span>Frescor</span>
+          <span>Qualidade</span>
+          <span>Saúde</span>
+          <span>Sabor</span>
+          <span>Natureza</span>
+          <span>Tradição</span>
+          <span>Frescor</span>
+          <span>Qualidade</span>
+          <span>Saúde</span>
+          <span>Sabor</span>
+          <span>Natureza</span>
+          <span>Tradição</span>
+          <span>Frescor</span>
+          <span>Qualidade</span>
+          <span>Saúde</span>
+          <span>Sabor</span>
+          <span>Natureza</span>
+          <span>Tradição</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards circulares -->
+
+    <section class="cards-circles">
+      <article class="card-cicle">
+        <div class="circle">
+          <a href="../pages/produtos.html">
+            <img src="../images/produtos.png" alt="Ingredientes Naturais">
+          </a>
+        </div>
+        <h3>Produtos</h3>
+      </article>
+
+      <article class="card-cicle">
+        <div class="circle">
+          <a href="#horta">
+            <img src="../images/cultivo.png" alt="Área de cultivo orgânico da Horta da Vovó" width="300" height="300">
+          </a>
+        </div>
+        <h3>A Horta que muda vidas</h3>
+      </article>
+
+      <article class="card-cicle">
+        <div class="circle">
+          <a href="../pages/cultivo.html">
+            <img src="../images/cultivo.png"  alt="Cliente Satisfeito" >
+          </a>
+        </div>
+        <h3>Cultivo</h3>
+      </article>
+
+      <img class="grama" src="../images/grama.png" alt="Grama decorativa">
+      <div class="card-grama"></div>
+
+    </section>
+    <!-- Banner de serviços -->
+    <section class="banner-servicos-section">
+      <div class="banner-servicos">
+        <div id="icon-servicos">
+          <img src="../images/escudo-seguro.png" alt="">
+          <div id="texto-servicos">
+            <h4>Confiança desde 2020</h4>
+            <p>100% alimentos certificados</p>
+          </div>
+        </div>
+        <div id="icon-servicos">
+          <img src="../images/vegetal.png" alt="">
+          <div id="texto-servicos">
+            <h4>Colhidos apos o seu pedido</h4>
+            <p>Fresquinhos e sem desperdício</p>
+          </div>
+        </div>
+        <div id="icon-servicos">
+          <img src="../images/caixa.png" alt="">
+          <div id="texto-servicos">
+            <h4>Cuidado ate a entrega</h4>
+            <p>Feito por nos, sem terceiros</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="container">
+
+      <section class="carrossel-produtos">
+       <H2>Produtos em Promoção</H2>
+        <div class="carrossel-container">
+          <button class="carrossel-btn prev" aria-label="Produto anterior">&#10094;</button>
+          <div class="carrossel-lista">
+          
+              <!-- Alface -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/alface.png" alt="Alface">
+                  <h3>Alface</h3>
+                  <p class="descricao">Alface fresca e crocante, perfeita para saladas.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 2,00</span> R$ 1,70 KG</p>
+                  <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Cenoura -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/cenoura.png" alt="Cenoura">
+                  <h3>Cenoura</h3>
+                  <p class="descricao">Cenoura orgânica, rica em vitaminas e saborosa.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 2,00</span> R$ 1,70 KG</p>
+               <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Couve manteiga -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/couve-manteiga.png" alt="Couve manteiga">
+                  <h3>Couve Manteiga</h3>
+                  <p class="descricao">Couve manteiga fresca, ideal para refogados.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 4,00</span> R$ 3,40</p>
+                <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Cebolinha -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/cebolinha.png" alt="Cebolinha">
+                  <h3>Cebolinha</h3>
+                  <p class="descricao">Cebolinha fresca, ideal para temperos.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 6,00</span> R$ 5,10 KG</p>
+                 <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Repolho -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/repolho.png" alt="Repolho">
+                  <h3>Repolho</h3>
+                  <p class="descricao">Repolho fresco, ideal para saladas e refogados.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 1,50</span> R$ 1,28 KG</p>
+                  <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Cheiro-verde -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/cheiro-verde.png" alt="Cheiro-verde">
+                  <h3>Cheiro-verde</h3>
+                  <p class="descricao">Cheiro-verde fresco, ideal para temperos.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 5,00</span> R$ 4,25 KG</p>
+                   <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Rúcula -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/rucula.png" alt="Rúcula">
+                  <h3>Rúcula</h3>
+                  <p class="descricao">Rúcula fresca, perfeita para saladas.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 6,50</span> R$ 5,53 KG</p>
+                   <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Espinafre -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/espinafre.png" alt="Espinafre">
+                  <h3>Espinafre</h3>
+                  <p class="descricao">Espinafre fresco, rico em nutrientes.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 4,50</span> R$ 3,83 KG</p>
+                  <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Coentro -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/coentro.png" alt="Coentro">
+                  <h3>Coentro</h3>
+                  <p class="descricao">Coentro fresco, ideal para temperos.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 12,00</span> R$ 10,20 KG</p>
+                  <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+                <!-- Pimenta -->
+                <div class="produto-card">
+                  <div class="tag-desconto">15% OFF</div>
+                  <img src="../images/pimenta.png" alt="Pimenta">
+                  <h3>Pimenta</h3>
+                  <p class="descricao">Pimenta fresca, ideal para temperos e molhos.</p>
+                  <p class="preco"><span class="preco-antigo">R$ 22,00</span> R$ 18,70 KG</p>
+                   <a href="../pages/produtos.html"class="btn-ver-mais">Ver Mais</a>
+                </div>
+
+          </div>
+          <button class="carrossel-btn next" aria-label="Próximo produto">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Conteúdo lateral -->
+      <article class="conteudo-lateral">
+        <div id="horta" class="texto-lateral">
+          <h2>A Horta que muda vidas</h2>
+          <p>Em nossa horta, cada semente é plantada com propósito e respeito à
+            natureza. Acreditamos que a verdadeira nutrição vem da terra, e por isso
+            cultivamos alimentos totalmente livres de agrotóxicos e produtos químicos.
+            Aqui, priorizamos o cuidado com o solo, a pureza da água e o equilíbrio do
+            ecossistema, garantindo colheitas mais saudáveis e saborosas.
+
+          </p>
+          <p>
+            Nossas hortaliças, frutas e ervas são colhidas no ponto certo, preservando o
+            frescor e o valor nutricional que fazem toda a diferença no dia a dia.
+            Trabalhamos com práticas sustentáveis, reduzindo o desperdício e
+            promovendo o consumo consciente. Cada produto que chega até você
+            carrega o carinho de quem cultiva com as próprias mãos e o compromisso
+            com um futuro mais verde e saudável.
+          </p>
+          <p>
+            Venha conhecer nossa horta e sentir de perto o aroma, o sabor e a energia de
+            alimentos verdadeiramente naturais. Descubra como o simples ato de plantar
+            pode transformar vidas, unir famílias e inspirar um novo jeito de se relacionar
+            com a comida e com o planeta.
+          </p>
+        </div>
+        <img src="../images/horta.png" alt="Descrição" class="imagem-lateral">
+      </article>
+
+      <article class="conteudo-lateral-left">
+        <div class="texto-lateral">
+          <h2>Sobre vovó Tereza</h2>
+          <p>A história da horta nasceu das mãos e da coragem de Vovó Tereza. Aos 15
+            anos, ela começou a plantar por necessidade econômica a terra era a única
+            forma de garantir o sustento da família. Com poucas sementes, muita força
+            de vontade e o coração cheio de esperança, Tereza transformou um simples
+            pedaço de chão em um verdadeiro lar de vida
+          </p>
+          <p>
+            Com o passar do tempo, o que antes era uma obrigação se tornou paixão.
+            Cuidar da horta deixou de ser apenas um meio de sobrevivência e passou a
+            ser um gesto de amor. Cada planta, cada broto e cada colheita criavam uma
+            conexão profunda entre ela e a natureza. O trabalho duro virou terapia, e o
+            solo, um companheiro fiel de todas as manhãs.
+          </p>
+          <p>
+            Hoje, a horta de Vovó Tereza é muito mais do que uma fonte de alimentos
+            frescos — é o reflexo de uma vida dedicada ao cuidado, à simplicidade e à
+            gratidão. Um exemplo de que, mesmo nas dificuldades, é possível florescer e
+            cultivar algo bonito, verdadeiro e cheio de propósito.
+          </p>
+        </div>
+        <img src="../images/vovo2.png" alt="Descrição" class="imagem-lateral">
+        
+      </article>
+     <article class="conteudo-lateral">
+        <div class="texto-lateral">
+      <h2>Produção limpa e consciente</h2>
+<p>Enquanto a agricultura convencional depende fortemente de agrotóxicos e
+produtos químicos para manter a produtividade, nossa horta segue o caminho
+da natureza. Trabalhamos com adubação orgânica, rotação de culturas e
+controle biológico de pragas, métodos sustentáveis que respeitam o equilíbrio
+do solo e preservam a vida ao redor.
+
+</p>
+<p>Essas práticas reduzem o impacto ambiental, protegem os recursos naturais
+e garantem alimentos verdadeiramente puros, sem resíduos químicos. O
+resultado é uma produção mais saudável, saborosa e segura para quem
+consome, além de contribuir para um planeta mais limpo e equilibrado.
+</p>
+<p>A tabela abaixo mostra de forma clara essa diferença: enquanto a agricultura
+convencional prioriza o rendimento imediato, a horta orgânica cultiva
+qualidade, saúde e sustentabilidade em cada colheita.
+</p>
+
+    </div>
+    <img src="../images/grafico.png" alt="Descrição" class="imagem-lateral">
+      </article>
+
+      <article>
+         <div class="container" role="region" aria-label="Calendário de plantio e colheita da Horta da Vovó">
+    <h1>Calendário de Plantio e Colheita — Horta da Vovó</h1>
+    <p class="lead">Sugestão de plantio mês a mês e tempo médio para colher — adaptado para clima brasileiro.</p>
+
+    <div class="table-wrap" role="table" aria-label="Tabela de calendário de plantio">
+      <table class="calendar" summary="Mês, o que plantar e tempo médio para colher">
+        <thead>
+          <tr>
+            <th scope="col">Mês</th>
+            <th scope="col">O que plantar</th>
+            <th scope="col">Tempo médio para colher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="month">Janeiro</td>
+            <td class="what-plant">Alface, rúcula, cebolinha, pepino, pimentão</td>
+            <td class="harvest-time">30 a 60 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Fevereiro</td>
+            <td class="what-plant">Tomate, couve, cenoura, coentro, beterraba</td>
+            <td class="harvest-time">60 a 90 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Março</td>
+            <td class="what-plant">Espinafre, rabanete, alface, salsa, acelga</td>
+            <td class="harvest-time">30 a 60 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Abril</td>
+            <td class="what-plant">Couve, cenoura, almeirão, cebolinha</td>
+            <td class="harvest-time">60 a 90 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Maio</td>
+            <td class="what-plant">Brócolis, couve-flor, beterraba, alface roxa</td>
+            <td class="harvest-time">60 a 100 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Junho</td>
+            <td class="what-plant">Salsinha, repolho, rúcula, espinafre</td>
+            <td class="harvest-time">45 a 80 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Julho</td>
+            <td class="what-plant">Cenoura, beterraba, couve, alho-poró</td>
+            <td class="harvest-time">60 a 90 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Agosto</td>
+            <td class="what-plant">Tomate-cereja, manjericão, pimentão, pepino</td>
+            <td class="harvest-time">60 a 100 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Setembro</td>
+            <td class="what-plant">Abóbora, alface, rúcula, milho-verde</td>
+            <td class="harvest-time">30 a 90 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Outubro</td>
+            <td class="what-plant">Feijão-vagem, cebolinha, berinjela, tomate</td>
+            <td class="harvest-time">45 a 100 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Novembro</td>
+            <td class="what-plant">Abobrinha, pepino, pimentão, coentro</td>
+            <td class="harvest-time">40 a 90 dias</td>
+          </tr>
+          <tr>
+            <td class="month">Dezembro</td>
+            <td class="what-plant">Alface, manjericão, rúcula, cenoura</td>
+            <td class="harvest-time">30 a 60 dias</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      </article>
+
+      <!-- Seção de FAQ -->
+<section class="faq-section">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Os produtos são realmente orgânicos?</button>
+    <div class="faq-answer">
+      <p>Sim! Todos os nossos produtos são cultivados sem o uso de agrotóxicos ou fertilizantes químicos. Utilizamos apenas métodos naturais e sustentáveis de cultivo, garantindo alimentos 100% saudáveis para você e sua família.</p>
+    </div>
+
+
+    
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Como posso fazer um pedido?</button>
+    <div class="faq-answer">
+      <p>Você pode fazer pedidos diretamente na nossa horta ou através do nosso WhatsApp. Estamos localizados na <strong>R. Henrique José Píres, 299 - Cândido Mota, SP</strong>. Entre em contato conosco para conhecer nossa disponibilidade atual de produtos.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Vocês fazem entregas?</button>
+    <div class="faq-answer">
+      <p>Sim, fazemos entregas na região de Cândido Mota e arredores. Entre em contato conosco para verificar se atendemos sua localidade e conhecer as condições de entrega.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Quais produtos vocês cultivam?</button>
+    <div class="faq-answer">
+      <p>Cultivamos uma grande variedade de hortaliças frescas, frutas da estação e ervas aromáticas. Nossa produção varia de acordo com a época do ano, sempre priorizando produtos frescos e de qualidade. Entre em contato para saber o que está disponível no momento.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Posso visitar a horta?</button>
+    <div class="faq-answer">
+      <p>Com certeza! Adoramos receber visitantes e mostrar como cultivamos nossos produtos com tanto carinho. Entre em contato conosco para agendar sua visita e conhecer de perto a Horta da Vovó.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Qual o horário de funcionamento?</button>
+    <div class="faq-answer">
+      <p>Estamos abertos de segunda a sábado. Entre em contato conosco para confirmar nossos horários e garantir que teremos os produtos frescos que você procura.</p>
+    </div>
+    
+   <div class="zap">
+  <a href="https://wa.me/551198888777" target="_blank">
+    <img src="../images/telefone.png" alt="Telefone" aria-label="Clique para entrar em contato via WhatsApp">
+  </a>
+</div>
+
+ 
+  </div>
+</section>
+
+</div>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h2 class="mapa-titulo">Encontre-nos aqui!</h2>
+      <div class="contato-mapa">
+        <div class="card-contato">
+          <img src="../images/vovo.png" alt="Tereza, a fundadora da Horta da Vovó" style="border-radius: 50%;">
+          <div class="card-contato-info">
+            <h2>Tereza Aparecida De Oliveira</h2>
+            <p>Fundadora da Horta da Vovó</p>
+            <ul>
+              <li>
+                <a href="mailto:tereza@hortadavovo.com.br">
+                  <img src="../images/email.png" alt="Email">
+                  <span>tereza@hortadavovo.com.br</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+5511988887777">
+                  <img src="../images/telefone.png" alt="Telefone">
+                  <span>(11) 98888-7777</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/maps/place/R.+Henrique+Jos%C3%A9+P%C3%ADres,+299+-+C%C3%A2ndido+Mota,+SP,+19885-576,+Brasil/@-22.739668,-50.381591,15z/data=!4m6!3m5!1s0x9495365b7fb3bd45:0x55a90443df00ddae!8m2!3d-22.739668!4d-50.381591!16s%2Fg%2F11l_644vz5?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank">
+                  <img src="../images/local.png" alt="Localização">
+                  <span>R. Henrique José Pires, 299 - Cândido Mota, SP</span>
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.692634052981!2d-50.38416592505164!3d-22.73966303191889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495365b7fb3bd45%3A0x55a90443df00ddae!2sR.%20Henrique%20Jos%C3%A9%20P%C3%ADres%2C%20299%20-%20C%C3%A2ndido%20Mota%2C%20SP%2C%2019885-576%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1758244201815!5m2!1spt-BR!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ---------------- FOOTER ---------------- -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/logo.png" alt="Logo Horta da Vovó" width="50" height="50">
+        <span>Horta da Vovó</span>
+      </div>
+        <div class="footer-copy">
+      <p>&copy; 2025 Horta da Vovó. Todos os direitos reservados.</p>
+    </div>
+
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="cultivo.html">Cultivo</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+  
+  </footer>
+</body>
+
+</html>
